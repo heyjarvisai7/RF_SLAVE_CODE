@@ -94,6 +94,9 @@ static nrf_esb_payload_t        tx_payload = NRF_ESB_CREATE_PAYLOAD(0, 0x01, 0x0
 #define     MAX_NODES            255
 #define     MIN_NODES            0
 
+#define     DATA_PACKET         0
+#define     PING_PACKET         1
+
 
 #define check_direction(arrptr) \
     (((arrptr)[POS_DIRECTION]  == 1) ? (Fwrd_Dirct = 1) : (Rvsr_Dirct = 1))
